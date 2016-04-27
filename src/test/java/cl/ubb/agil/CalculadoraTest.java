@@ -10,4 +10,10 @@ public class CalculadoraTest {
 		int result = calculadora.suma(2,3);
 		assertThat(result, is(5));
 	}
+	@Test
+	public void menosUnoMasSieteEsSeis(){
+		Calculadora calculadora = new Calculadora();
+		int result = calculadora.suma(-1,7);
+		assertThat(result, is(6));
+	}
 }
