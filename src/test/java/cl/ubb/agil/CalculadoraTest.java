@@ -28,4 +28,10 @@ public class CalculadoraTest {
 		int result = calculadora.resta(-10,5);
 		assertThat(result, is(-15));
 	}
+	@Test
+	public void Multiplicacion6y3es18(){
+		Calculadora calculadora = new Calculadora();
+		int result = calculadora.multiplicar(6,3);
+		assertThat(result, is(18));
+	}
 }
