@@ -43,18 +43,17 @@ public class CalculadoraTest {
 		assertThat(result, is(48));
 	}
 	@Test
-	public void Dividir12y3es4(){
+	public void Dividir12y3es4() throws ExcepcionOperacionInvalida{
 		int result = calculadora.dividir(12,3);
 		assertThat(result, is(4));
 	}
 	@Test
-	public void Dividir36y6es6(){
+	public void Dividir36y6es6() throws ExcepcionOperacionInvalida{
 		int result = calculadora.dividir(36,6);
 		assertThat(result, is(6));
 	}
 	@Test(expected=ExcepcionOperacionInvalida.class)
-	public void Dividir12y0esExcepcion(){
-		int result = calculadora.dividir(12,0);
-		
+	public void Dividir12y0esExcepcion() throws ExcepcionOperacionInvalida{
+		int result = calculadora.dividir(12, 0);
 	}
 }
