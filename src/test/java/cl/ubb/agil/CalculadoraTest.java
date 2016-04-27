@@ -34,4 +34,10 @@ public class CalculadoraTest {
 		int result = calculadora.multiplicar(6,3);
 		assertThat(result, is(18));
 	}
+	@Test
+	public void Multiplicacion12y4es48(){
+		Calculadora calculadora = new Calculadora();
+		int result = calculadora.multiplicar(12,4);
+		assertThat(result, is(48));
+	}
 }
