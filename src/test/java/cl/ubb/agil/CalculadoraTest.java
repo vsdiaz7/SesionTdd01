@@ -22,4 +22,10 @@ public class CalculadoraTest {
 		int result = calculadora.resta(200,73);
 		assertThat(result, is(127));
 	}
+	@Test
+	public void Menos10menos5esMenosQuince(){
+		Calculadora calculadora = new Calculadora();
+		int result = calculadora.resta(-10,5);
+		assertThat(result, is(-15));
+	}
 }
