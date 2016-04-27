@@ -16,4 +16,10 @@ public class CalculadoraTest {
 		int result = calculadora.suma(-1,7);
 		assertThat(result, is(6));
 	}
+	@Test
+	public void DoscientoMenos73Esigual127(){
+		Calculadora calculadora = new Calculadora();
+		int result = calculadora.resta(200,73);
+		assertThat(result, is(127));
+	}
 }
