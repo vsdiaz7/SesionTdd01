@@ -56,4 +56,9 @@ public class CalculadoraTest {
 	public void Dividir12y0esExcepcion() throws ExcepcionOperacionInvalida{
 		int result = calculadora.dividir(12, 0);
 	}
+	@Test
+	public void Expresion3mas4mas7es14(){
+		int result = calculadora.sumarExpresion("3+4+7");
+		assertThat(result, is(14));
+	}
 }
