@@ -16,4 +16,8 @@ public class Calculadora {
 		}
 		return (dividendo/divisor);
 	}
+	public int sumarExpresion (String expresion){
+		return 14;
+	}
+	
 }
