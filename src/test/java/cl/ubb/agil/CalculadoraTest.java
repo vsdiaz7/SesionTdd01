@@ -52,4 +52,9 @@ public class CalculadoraTest {
 		int result = calculadora.dividir(36,6);
 		assertThat(result, is(6));
 	}
+	@Test(expected=ExcepcionOperacionInvalida.class)
+	public void Dividir12y0esExcepcion(){
+		int result = calculadora.dividir(12,0);
+		
+	}
 }
