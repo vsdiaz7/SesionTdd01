@@ -8,6 +8,6 @@ public class CalculadoraTest {
 	public void dosMasTresEsCinco(){
 		Calculadora calculadora = new Calculadora();
 		int result = calculadora.suma(2,3);
-		assertThat(5, is(5));
+		assertThat(result, is(5));
 	}
 }
