@@ -66,4 +66,9 @@ public class CalculadoraTest {
 		int result = calculadora.sumarExpresion("2+6+8");
 		assertThat(result, is(16));
 	}
+	@Test
+	public void Expresion10mas5mas20mas15(){
+		int result = calculadora.sumarExpresion("10+5+20+15");
+		assertThat(result, is(50));
+	}
 }
