@@ -40,4 +40,10 @@ public class CalculadoraTest {
 		int result = calculadora.multiplicar(12,4);
 		assertThat(result, is(48));
 	}
+	@Test
+	public void Dividir12y3es4(){
+		Calculadora calculadora = new Calculadora();
+		int result = calculadora.dividir(12,3);
+		assertThat(result, is(4));
+	}
 }
